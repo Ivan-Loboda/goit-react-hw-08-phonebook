@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+}
+
+.avatar {
+  border-radius: 20%;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .avatar {
+    width: 35px;
+  }
+}
+
+.name {
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 15px;
+  }
+}
+
+.button {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, .6);
+  text-shadow: 1px 1px rgba(0, 0, 0, .3);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgb(206, 220, 231) linear-gradient(rgb(206, 220, 231), rgb(89, 106, 114));
+  box-shadow:
+    inset 0 0 3px 1px rgba(0, 0, 0, .8),
+    inset rgba(0, 0, 0, .3) -5px -5px 8px 5px,
+    inset rgba(255, 255, 255, .5) 5px 5px 8px 5px,
+    1px 1px 1px rgba(255, 255, 255, .1),
+    -2px -2px 5px rgba(0, 0, 0, .5);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, .9);
+  background: rgb(206, 220, 231) linear-gradient(rgb(206, 220, 231), rgb(89, 106, 114));
+}
+
+.button:active {
+  background: rgb(206, 220, 231) linear-gradient(rgb(206, 220, 231), rgb(89, 106, 114));
+  box-shadow:
+    inset 0 0 5px 3px rgba(0, 0, 0, .8),
+    inset rgba(0, 0, 0, .3) -5px -5px 8px 5px,
+    inset rgba(255, 255, 255, .5) 5px 5px 8px 5px,
+    1px 1px 1px rgba(255, 255, 255, .2),
+    -2px -2px 5px rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+}

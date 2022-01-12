@@ -1,0 +1,18 @@
+.link {
+  margin-right: 20px;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: -1px -1px #000;
+  text-decoration: none;
+}
+
+.activeLink {
+  text-decoration: underline;
+  color: #8fbc8f;
+}
+
+@media screen and (max-width: 768px) {
+  .link {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,75 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 20px 5px;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 600px;
+  height: auto;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  background-color: beige;
+  box-shadow: rgba(0, 0, 0, .5) 3px 10px 10px -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 300px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+.label {
+  text-align: left;
+  margin-left: 45px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #2f4f4f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  text-shadow: -1px -1px #000;
+}
+
+.label:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    margin-left: 5px;
+  }
+}
+
+.input {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 500px;
+  border: 2px solid #dcdcdc;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(110, 121, 128, .8);
+  border-top-color: rgba(0, 0, 0, .3);
+  background: rgb(89, 106, 114) linear-gradient(rgb(89, 106, 114));
+  box-shadow:
+    0 -1px rgba(10, 21, 28, .9) inset,
+    0 1px rgba(255, 255, 255, .5) inset;
+}
+
+.input:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    width: 280px;
+  }
+}

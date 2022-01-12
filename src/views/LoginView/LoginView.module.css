@@ -1,0 +1,73 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 300px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.input {
+  width: 500px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(110, 121, 128, .8);
+  border-top-color: rgba(0, 0, 0, .3);
+  background: rgb(89, 106, 114) linear-gradient(rgb(89, 106, 114));
+  box-shadow:
+    0 -1px rgba(10, 21, 28, .9) inset,
+    0 1px rgba(255, 255, 255, .5) inset;
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    width: 280px;
+  }
+}
+
+
+
+.label {
+  text-align: left;
+  color: #fff;
+}
+
+.button {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: -1px -1px #000;
+  user-select: none;
+  padding: .8em 2em;
+  width: 120px;
+  outline: none;
+  background-color: #000;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .0) 30%, rgba(255, 255, 255, .8), rgba(255, 255, 255, .0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .5) 50%, rgba(0, 0, 0, 0) 50%);
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto;
+  background-position: 200% 0, 0 0;
+  box-shadow: rgba(0, 0, 0, .3) 0 2px 5px;
+}
+
+.button:active {
+  top: 1px;
+  box-shadow: none;
+}
+
+.button:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0;
+}
